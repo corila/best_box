@@ -9,7 +9,7 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tstemplate.php']['i
 'EXT:' . $_EXTKEY . '/Classes/Hooks/TypoScriptTemplateBox.php:TYPO3\CMS\BestBox\Hooks\TypoScriptTemplateBox->preprocessIncludeStaticTypoScriptSources';
 
 
-\TYPO3\CMS\Mybox1\Hooks\TypoScriptTemplateBox::getInstance()->addStaticTemplates(array(
+\TYPO3\CMS\BestBox\Hooks\TypoScriptTemplateBox::getInstance()->addStaticTemplates(array(
 		'EXT:css_styled_content/static',
 		'EXT:seo_basics/static',
 		'EXT:news/Configuration/TypoScript',
