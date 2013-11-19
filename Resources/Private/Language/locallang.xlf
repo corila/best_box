@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-11-19T14:17:21Z" product-name="best_box">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_bestbox_domain_model_base">
+				<source>Base</source>
+			</trans-unit>
+			<trans-unit id="tx_bestbox_domain_model_base.name">
+				<source>name</source>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>

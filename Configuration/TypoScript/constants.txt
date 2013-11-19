@@ -1,0 +1,46 @@
+plugin.tx_bestbox {
+	view {
+		# cat=plugin.tx_bestbox/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:best_box/Resources/Private/Templates/
+		# cat=plugin.tx_bestbox/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:best_box/Resources/Private/Partials/
+		# cat=plugin.tx_bestbox/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:best_box/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_bestbox//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}
+const {
+	########################
+	# PAGE BLOG            #
+	########################
+	page{
+		root = 96
+	}
+	
+	########################
+	# URL BLOG             #
+	########################
+	url {
+		local = local.demo2
+	}
+	
+	########################
+	# PATH BLOG            #
+	########################
+	path {
+		public = EXT:best_box/Resources/Public/
+		css = {$const.path.public}Css/
+		script = {$const.path.public}JavaScript/
+	}
+	
+	########################
+	# VERSION BLOG         #
+	########################
+	version {
+		twitter_bootstrap = 3.0.0
+		jQuery = 1.10.2
+	}
+}

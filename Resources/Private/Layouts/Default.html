@@ -1,0 +1,15 @@
+<div class="hidden"><f:cObject typoscriptObjectPath="lib.misc.accessibility" /></div>
+<f:render section="Header" partial="Header"/>
+<div class="container">
+	<div class="row">
+		<f:render section="SocialMedia" partial="SocialMedia"/>
+	</div>
+	<f:render section="Breadcrumb" partial="Breadcrumb"/>
+	<!--TYPO3SEARCH_begin-->
+	<div id="main-content">
+		<f:render section="PageTitle" partial="PageTitle"/>
+		<f:render section="Content"/>
+	</div>
+	<!--TYPO3SEARCH_end-->
+</div>
+<f:render section="Footer" partial="Footer"/>

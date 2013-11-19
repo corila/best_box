@@ -1,0 +1,91 @@
+plugin.tx_bestbox {
+	view {
+		templateRootPath = {$plugin.tx_bestbox.view.templateRootPath}
+		partialRootPath = {$plugin.tx_bestbox.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_bestbox.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_bestbox.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}
+
+
+[GLOBAL]
+plugin.tx_bestbox.view {
+	label = Fluid Content Elements - Best Box Content Element
+	extensionKey = best_box
+	templateRootPath = EXT:best_box/Resources/Private/Templates/
+	partialRootPath = EXT:flux/Resources/Private/Partials/
+	layoutRootPath = EXT:fluidcontent/Resources/Private/Layouts/
+}
+###################################################
+# Include all TypoScript files
+###################################################
+
+## Misc part1
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:best_box/Configuration/TypoScript/Lib/Misc/ProjectName/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:best_box/Configuration/TypoScript/Lib/Misc/Htmltitle/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:best_box/Configuration/TypoScript/Lib/Misc/Analytics/Setup.ts">
+
+## Page
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:best_box/Configuration/TypoScript/Page/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:best_box/Configuration/TypoScript/Page/HeaderData/Setup.ts">
+
+## Misc part2
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:best_box/Configuration/TypoScript/Lib/Misc/Logo/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:best_box/Configuration/TypoScript/Lib/Misc/Pagetitle/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:best_box/Configuration/TypoScript/Lib/Misc/Accessibility/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:best_box/Configuration/TypoScript/Lib/Misc/Searchbox/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:best_box/Configuration/TypoScript/Lib/Misc/Copyright/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:best_box/Configuration/TypoScript/Lib/Misc/Socialmedia/Setup.ts">
+
+## Navigations
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:best_box/Configuration/TypoScript/Lib/Nav/Breadcrumb/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:best_box/Configuration/TypoScript/Lib/Nav/Footer/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:best_box/Configuration/TypoScript/Lib/Nav/Language/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:best_box/Configuration/TypoScript/Lib/Nav/Main/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:best_box/Configuration/TypoScript/Lib/Nav/Left/Setup.ts">
+
+
+###################################################
+# Include all TypoScript files
+###################################################
+
+# Configuration
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:speciality/Configuration/TypoScript/Config/language.ts">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:speciality/Configuration/TypoScript/Config/config.ts">
+
+# Lib
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:speciality/Configuration/TypoScript/Lib/footer.ts">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:speciality/Configuration/TypoScript/Lib/menu.ts">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:speciality/Configuration/TypoScript/Lib/disqus.ts">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:speciality/Configuration/TypoScript/Lib/addthis.ts">
+
+# Plugin
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:speciality/Configuration/TypoScript/Plugin/tx_cssstyledcontent.ts">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:speciality/Configuration/TypoScript/Plugin/tx_form.ts">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:speciality/Configuration/TypoScript/Plugin/tx_indexedsearch.ts">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:speciality/Configuration/TypoScript/Plugin/tx_fluidcontent.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:best_box/Configuration/TypoScript/Plugin/tx_fluidpages.ts">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:speciality/Configuration/TypoScript/Plugin/tx_news.ts">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:speciality/Configuration/TypoScript/Plugin/tx_pagebrowse.ts">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:speciality/Configuration/TypoScript/Plugin/tx_seobasics.ts">
+
+## Content
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:speciality/Configuration/TypoScript/Content/tt_content.ts">
+
+## Page
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:speciality/Configuration/TypoScript/Page/header.ts">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:speciality/Configuration/TypoScript/Page/page.ts">
+
+# @todo remove me when solving https://github.com/FluidTYPO3/fluidpages/issues/76
+# Previous value was {page.uid} in file EXT:speciality/Resources/Private/Partials/Header.html
+#lib.pageUid = TEXT
+#lib.pageUid.data = page:uid
+
+
+plugin.tx_bestbox._CSS_DEFAULT_STYLE ()

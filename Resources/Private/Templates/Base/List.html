@@ -1,0 +1,24 @@
+<f:layout name="Default" />
+<f:section name="main">
+<h1>Listing for Base</h1>
+
+<f:flashMessages />
+
+<table  class="tx_bestbox" >
+	<tr>
+		<th><f:translate key="tx_bestbox_domain_model_base.name" /></th>
+		<th> </th>
+		<th> </th>
+	</tr>
+
+	<f:for each="{bases}" as="base">
+		<tr>
+			<td><f:link.action action="show" arguments="{base : base}"> {base.name}</f:link.action></td>
+			<td><f:link.action action="edit" arguments="{base : base}">Edit</f:link.action></td>
+			<td><f:link.action action="delete" arguments="{base : base}">Delete</f:link.action></td>
+		</tr>
+	</f:for>
+</table>
+
+<f:link.action action="new">New Base</f:link.action>
+</f:section>
