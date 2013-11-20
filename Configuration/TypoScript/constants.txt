@@ -96,5 +96,25 @@ const {
 	########################
 	# ANALYTIC BLOG        #
 	########################
-	analytics.account = UA-XXXXX-X
+	analytics {
+		account = UA-XXXXX-X
+	}
+	
+	########################
+	# ANALYTIC BLOG        #
+	########################
+	socialmedia {
+		facebook {
+			link = https://www.facebook.com/chanthou.nim
+			title = chanthou
+		}
+		twitter {
+			link = https://twitter.com/ChanthouNim
+			title = chanthouNim
+		}
+		linkedin {
+			link = 
+			title = 
+		}
+	}
 }

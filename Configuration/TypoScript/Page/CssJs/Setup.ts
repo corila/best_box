@@ -1,6 +1,6 @@
 page {
 	includeCSS {
-		bootstrap = {$const.path.css}Bootstrap/{$const.version.twitter_bootstrap}/bootstrap.min.css
+		bootstrap = {$const.path.css}Bootstrap/{$const.version.twitter_bootstrap}/bootstrap.css
 		bootstrap {
 			external = 0
 			disableCompression = 1
