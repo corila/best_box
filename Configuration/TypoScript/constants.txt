@@ -13,11 +13,33 @@ plugin.tx_bestbox {
 	}
 }
 const {
+
+	########################
+	# LOGO BLOG            #
+	########################
+	logo {
+		file = EXT:best_box/Resources/Public/Images/logo.png
+		height = 25
+		altText = Ninja Bug logo
+		title = Ninja Bug
+	}
+	
+	########################
+	# LANGUAGE BLOG        #
+	########################
+	language {
+		label {
+			english = EN
+			khmer = KM
+		}
+	}
 	########################
 	# PAGE BLOG            #
 	########################
-	page{
+	page {
 		root = 1
+		home = 2
+		search = 4
 	}
 	
 	########################
@@ -31,9 +53,11 @@ const {
 	# PATH BLOG            #
 	########################
 	path {
+		private = EXT:best_box/Resources/Private/
 		public = EXT:best_box/Resources/Public/
 		css = {$const.path.public}Css/
 		script = {$const.path.public}JavaScript/
+		locallang = LLL:{$const.path.private}Language/locallang.xlf
 	}
 	
 	########################

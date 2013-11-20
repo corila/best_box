@@ -10,7 +10,9 @@
 			<trans-unit id="tx_bestbox_domain_model_base.name">
 				<source>name</source>
 			</trans-unit>
-			
+			<trans-unit id="search">
+				<source>Search</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

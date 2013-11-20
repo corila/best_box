@@ -1,20 +1,19 @@
 lib.nav.language = HMENU
 lib.nav.language {
-	wrap = <nav class="pull-right" id="lang-nav">|</nav>
 
 	special = language
-	special.value = 0,1
+	special.value = 0,1,2
 	special.normalWhenNoLanguage = 0
 
 	1 = TMENU
 	1 {
-		wrap = <ul class="nav">|</ul>
+		wrap = <ul id="lang-nav" class="nav navbar-nav navbar-right">|</ul>
 		noBlur = 1
 
 		NO = 1
 		NO {
 			stdWrap.cObject = TEXT
-			stdWrap.cObject.value = {$const.language.label.english} || {$const.language.label.khmer}
+			stdWrap.cObject.value = {$const.language.label.english} || {$const.language.label.khmer} || {$const.language.label.german}
 			allWrap = <li>|<i class="lang-bg"></i></li> |*| <li>|<i class="lang-bg"></i></li> |*| <li class="last">|</li>
 		}
 
@@ -26,5 +25,6 @@ lib.nav.language {
 		USERDEF1 < .NO
 		USERDEF = 1
 		USERDEF1.doNotLinkIt = 1
+		USERDEF1.allWrap = <li><span class="hidden"> | </span></li>
 	}
 }
