@@ -1,11 +1,10 @@
-## Google Analytics :: Asynchronous Syntax
+## Google Analytics : Asynchronous Syntax
 ## See https://developers.google.com/analytics/devguides/collection/gajs/#quickstart
 lib.misc.analytics = TEXT
 lib.misc.analytics {
 	value (
 
 <script type="text/javascript">
-
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-XXXXX-X']);
   _gaq.push(['_trackPageview']);
@@ -15,7 +14,6 @@ lib.misc.analytics {
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
 </script>
 	)
 
@@ -26,7 +24,6 @@ lib.misc.analytics {
 			replace = {$const.analytics.account}
 		}
 	}
-
 	## If the Analytics account is not empty
 	if.isTrue = {$const.analytics.account}
 }
@@ -36,6 +33,6 @@ lib.misc.analytics {
 	lib.misc.analytics = TEXT
 	lib.misc.analytics.value (
 
-<!-- Google Analytics is missing. -->
+<!-- Google Analytics not yet generated. -->
 	)
 [end]

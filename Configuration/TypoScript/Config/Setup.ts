@@ -68,12 +68,6 @@ config {
 	config.baseURL = {$const.url.dev}/
 [globalVar = IENV:TYPO3_REQUEST_HOST = {$const.url.latest}]
 	config.baseURL = {$const.url.latest}/
-[globalVar = IENV:TYPO3_REQUEST_HOST = {$const.url.staging}]
-	config.baseURL = {$const.url.staging}/
-[globalVar = IENV:TYPO3_REQUEST_HOST = {$const.url.demo}]
-	config.baseURL = {$const.url.demo}/
-[globalVar = IENV:TYPO3_REQUEST_HOST = {$const.url.temp}]
-	config.baseURL = {$const.url.temp}/
 [end]
 
 ## Condition to change language settings for khmer
@@ -84,16 +78,5 @@ config {
 		locale_all = km_KH.UTF-8
 		alternate_html_xhtml_language = km
 		htmlTag_langKey = km
-	}
-[end]
-
-## Condition to change language settings for german
-[globalVar = GP:L = 2]
-	config {
-		sys_language_uid = 2
-		language = de
-		locale_all = de_DE.utf8
-		alternate_html_xhtml_language = de
-		htmlTag_langKey = de
 	}
 [end]

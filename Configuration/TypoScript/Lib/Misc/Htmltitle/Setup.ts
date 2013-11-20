@@ -9,7 +9,7 @@ lib.misc.htmltitle {
 
 	## Website Title part
 	20 = TEXT
-	20.data = {$const.locallang}:sitetitle
+	20.data = {$const.path.locallang}:sitetitle
 	20.noTrimWrap = | - |
 
 }

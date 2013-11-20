@@ -12,6 +12,13 @@ page {
 			media = screen
 			disableCompression = 1
 		}
+		style = {$const.path.css}style.css
+		style {
+			external = 0
+			disableCompression = 1
+			excludeFromConcatenation = 1
+			media = all
+		}
 	}
 
 	includeJSFooterlibs {

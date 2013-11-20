@@ -13,6 +13,12 @@
 			<trans-unit id="search">
 				<source>Search</source>
 			</trans-unit>
+			<trans-unit id="sitetitle">
+				<source>BestBox</source>
+			</trans-unit>
+			<trans-unit id="home">
+				<source>Home</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

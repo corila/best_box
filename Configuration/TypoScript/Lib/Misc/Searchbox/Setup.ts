@@ -10,12 +10,12 @@ lib.misc.searchbox {
 	20 = COA
 	20 {
 		10 = LOAD_REGISTER
-		10.searchlabel.data = {$const.locallang}:search
+		10.searchlabel.data = {$const.path.locallang}:search
 
 		20 = TEXT
 		20.data = GP:tx_indexedsearch|sword
 		20.htmlSpecialChars = 1
-		20.dataWrap = <input name="tx_indexedsearch[sword]"  id="search_field" type="search" placeholder="Search" />
+		20.dataWrap = <input name="tx_indexedsearch[sword]"  id="search_field" type="search" placeholder="{register: searchlabel}" />
 		30 = COA
 		30 {
 			10 = TEXT

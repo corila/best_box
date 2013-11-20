@@ -1,3 +1,6 @@
+######################################################
+# DEFAULT BLOG     PLEASE DON'T CHANGE THIS PATH     #
+######################################################
 plugin.tx_bestbox {
 	view {
 		# cat=plugin.tx_bestbox/file; type=string; label=Path to template root (FE)
@@ -12,14 +15,36 @@ plugin.tx_bestbox {
 		storagePid =
 	}
 }
+
+
+
 const {
+
+	########################
+	# CONFIX BLOG          #
+	########################
+	compressCss = 1
+	compressJs = 1
+	concatenateCss = 1
+	concatenateJs = 0
+	moveJsFromHeaderToFooter = 0
+	headerComment = TYPO3 integration by best box ninja bug team
+	
+	########################
+	# URL BLOG             #
+	########################
+	url {
+		local = local.demo2
+		live = 
+		latest = 
+	}
 
 	########################
 	# LOGO BLOG            #
 	########################
 	logo {
 		file = EXT:best_box/Resources/Public/Images/logo.png
-		height = 25
+		height = 18
 		altText = Ninja Bug logo
 		title = Ninja Bug
 	}
@@ -43,13 +68,6 @@ const {
 	}
 	
 	########################
-	# URL BLOG             #
-	########################
-	url {
-		local = local.demo2
-	}
-	
-	########################
 	# PATH BLOG            #
 	########################
 	path {
@@ -61,10 +79,22 @@ const {
 	}
 	
 	########################
-	# VERSION BLOG         #
+	# CSS & JS VERSION BLOG#
 	########################
 	version {
 		twitter_bootstrap = 3.0.0
 		jQuery = 1.10.2
 	}
+	
+	########################
+	# META BLOG         #
+	########################
+	meta {
+		description = Best Box default package
+		keywords = Best Box
+	}
+	########################
+	# ANALYTIC BLOG        #
+	########################
+	analytics.account = UA-XXXXX-X
 }
