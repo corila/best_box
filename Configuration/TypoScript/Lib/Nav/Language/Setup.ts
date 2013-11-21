@@ -2,7 +2,7 @@ lib.nav.language = HMENU
 lib.nav.language {
 
 	special = language
-	special.value = 0,1,2
+	special.value = 0,1
 	special.normalWhenNoLanguage = 0
 
 	1 = TMENU
@@ -13,7 +13,7 @@ lib.nav.language {
 		NO = 1
 		NO {
 			stdWrap.cObject = TEXT
-			stdWrap.cObject.value = {$const.language.label.english} || {$const.language.label.khmer} || {$const.language.label.german}
+			stdWrap.cObject.value = {$const.language.label.english} || {$const.language.label.khmer}
 			allWrap = <li>|<i class="lang-bg"></i></li> |*| <li>|<i class="lang-bg"></i></li> |*| <li class="last">|</li>
 		}
 

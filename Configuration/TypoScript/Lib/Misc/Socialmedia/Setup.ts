@@ -1,7 +1,7 @@
 ## Social media
 lib.misc.socialmedia = COA
 lib.misc.socialmedia {
-	wrap = <aside class="social-media"><ul>|</ul></aside>
+	wrap = <aside class="social-media"><ul class="list-inline navbar-right">|</ul></aside>
 	
 	## Facebook
 	10 = TEXT

@@ -5,7 +5,7 @@ lib.misc.searchbox {
 	10 = TEXT
 	10.typolink.parameter = {$const.page.search}
 	10.typolink.returnLast = url
-	10.wrap = <div id="search-box"><form action="|" method="post" class="navbar-form navbar-right"><div>
+	10.wrap = <form action="|" method="post" class="navbar-form  navbar-right">
 
 	20 = COA
 	20 {
