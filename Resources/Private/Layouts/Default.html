@@ -4,14 +4,12 @@
 
 <div class="container">
 	<f:render section="Breadcrumb" partial="Breadcrumb"/>
-	<!--TYPO3SEARCH_begin-->
 	<div id="main-content">
 		<f:render section="PageTitle" partial="PageTitle"/>
 		<f:render section="Content"/>
 	</div>
-	<!--TYPO3SEARCH_end-->
-	<div class="row">
-		<f:render section="SocialMedia" partial="SocialMedia"/>
-	</div>
 </div>
-<f:render section="Footer" partial="Footer"/>
+<footer class="" role="contentinfo">
+	<f:render section="FooterInfo" partial="FooterInfo"/>
+	<f:render section="Footer" partial="Footer"/>
+</footer>

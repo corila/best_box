@@ -1,8 +1,24 @@
 <f:section name="Footer">
-<footer id="footer">
-	<div class="container custom-footer">
-		<f:cObject typoscriptObjectPath="lib.nav.footer" />
-		<f:cObject typoscriptObjectPath="lib.misc.copyright" />
-	</div>
-</footer>
+		<nav class="bb-footer navbar-fixed-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-10">
+						<nav id="footer-nav">
+							<ul class="list-unstyled list-inline navbar-left">
+								<f:cObject typoscriptObjectPath="lib.nav.footer" />
+							</ul>
+							<p>&copy;<f:translate key="LLL:EXT:best_box/Resources/Private/Language/locallang.xlf:copyright" /></p>
+						</nav>
+					</div>
+					<div class="col-lg-2">
+					<aside class="social-media">
+						<ul class="list-inline navbar-right">
+							<f:render section="SocialMedia" partial="SocialMedia"/>
+						</ul>
+					</aside>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</footer>
 </f:section>

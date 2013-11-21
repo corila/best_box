@@ -1,7 +1,7 @@
 ## For the breadcrumb cObject we use a HMENU of the type 'rootline'
 lib.nav.breadcrumb = COA
 lib.nav.breadcrumb {
-	wrap = <div class="col-lg-12"><nav id="breadcrumb"><ul>|</ul></nav></div>
+	wrap = <ul class="list-unstyled list-inline">|</ul>
 
 	10 = HMENU
 	10 {

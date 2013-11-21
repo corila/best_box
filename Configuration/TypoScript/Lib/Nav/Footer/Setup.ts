@@ -1,13 +1,9 @@
 lib.nav.footer= HMENU
 lib.nav.footer {
-	wrap = <nav id="footer-nav">|</nav>
-
 	special = directory
-	special.value = {$const.page.pid.footer}
-
+	special.value = {$const.page.footer}
 	1 = TMENU
 	1 {
-		wrap = <ul>|</ul>
 		noBlur = 1
 		expAll = 1
 

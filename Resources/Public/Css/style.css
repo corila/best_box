@@ -30,3 +30,25 @@ body {
 	/* BLOG END: Blog override style of bootstrap */
 
 /* END: Header and Sub Custom Style */
+
+
+#main-content {
+	min-height:470px;
+}
+
+
+.bb-footer-info {
+	bottom: 50px;
+	background-color: #563d7a;
+	min-height:400px;
+}
+.bb-footer {
+	max-height:50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	background-color: #563d7c;
+	text-align: center;
+	border-top: 1px solid #463265;
+	box-shadow: 0 1px 0 rgba(255,255,255,.1);
+}
