@@ -14,7 +14,7 @@ body {
 	}
 	.bb-subheader {
 		color: #cdbfe3;
-		background-color: #563d7c;
+		background-color: #563D7C;
 	}
 	
 	/* BLOG: Blog override style of bootstrap */
@@ -33,15 +33,17 @@ body {
 
 
 #main-content {
-	min-height:470px;
+	min-height:458px;
 }
 
 
 .bb-footer-info {
 	bottom: 50px;
-	background-color: #563d7a;
+	background-color: #463265;
 	min-height:400px;
+	color: #ffffff;
 }
+
 .bb-footer {
 	max-height:50px;
 	padding-top: 10px;
