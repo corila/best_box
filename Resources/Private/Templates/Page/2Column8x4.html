@@ -19,12 +19,19 @@
 </f:section>
 
 <f:section name="Content">
-	<div class="row">
-		<div class="col-lg-8">
-			<v:page.content.render column="0"/>
-		</div>
-		<div class="col-lg-4 border-none">
-			<v:page.content.render column="1"/>
+	<f:render section="SubHeader" partial="SubHeader"/>
+	<div class="container">
+		<f:render section="Breadcrumb" partial="Breadcrumb"/>
+		<div id="main-content">
+			<f:render section="PageTitle" partial="PageTitle"/>
+			<div class="row">
+				<div class="col-lg-8">
+					<v:page.content.render column="0"/>
+				</div>
+				<div class="col-lg-4 border-none">
+					<v:page.content.render column="1"/>
+				</div>
+			</div>
 		</div>
 	</div>
 </f:section>
