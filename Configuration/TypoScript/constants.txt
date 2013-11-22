@@ -34,7 +34,7 @@ const {
 	# URL BLOG             #
 	########################
 	url {
-		local = local.demo2
+		local = local.demo5
 		live = 
 		latest = 
 	}

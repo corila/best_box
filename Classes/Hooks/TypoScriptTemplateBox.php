@@ -63,7 +63,7 @@ class TypoScriptTemplateBox implements \TYPO3\CMS\Core\SingletonInterface {
 	public function preprocessIncludeStaticTypoScriptSources(array $params, \TYPO3\CMS\Core\TypoScript\TemplateService $pObj) {
 		if (isset($params['row']['root'])) {
 			// Add development static templates
-			$this->addStaticTemplate(self::SELF_DEVELOPMENT_TEMPLATE);
+			//$this->addStaticTemplate(self::SELF_DEVELOPMENT_TEMPLATE);
 			$staticTemplatesFromBackend = \TYPO3\CMS\Core\Utility\GeneralUtility::trimExplode(',', $params['row']['include_static_file']);
 			$staticTemplates = array_merge($this->getStaticTemplates(), $staticTemplatesFromBackend);
 			$params['row']['include_static_file'] = implode(',', array_unique($staticTemplates));

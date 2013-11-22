@@ -3,7 +3,6 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2013-11-19T14:17:21Z" product-name="best_box">
 		<header/>
 		<body>
-
 			<trans-unit id="tx_bestbox_domain_model_base">
 				<source>Base</source>
 			</trans-unit>
@@ -21,6 +20,55 @@
 			</trans-unit>
 			<trans-unit id="copyright">
 				<source>2013 Best Box. powered by Ninja Bub team.</source>
+			</trans-unit>
+
+			<trans-unit id="flux.teaser">
+				<source>NinjaBug: Teaser content elements</source>
+			</trans-unit>
+			<trans-unit id="flux.teaser.description">
+				<source>Teaser Contain: image, text and link</source>
+			</trans-unit>
+			<trans-unit id="flux.teaser.fields.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="flux.teaser.fields.header">
+				<source>header</source>
+			</trans-unit>
+			<trans-unit id="flux.teaser.fields.text">
+				<source>Boy Text</source>
+			</trans-unit>
+			<trans-unit id="flux.teaser.fields.linkLabel">
+				<source>Link Text</source>
+			</trans-unit>
+			<trans-unit id="flux.teaser.fields.linkTarget">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="flux.googleMap">
+				<source>NinjaBug: Google Map content elements</source>
+			</trans-unit>
+			<trans-unit id="flux.googleMap.description">
+				<source>Google Map Contain: latitude and longitude, contact information</source>
+			</trans-unit>
+			<trans-unit id="flux.googleMap.fields.defaultZoomLevel">
+				<source>Default Zoom Level (Integer default = 8)</source>
+			</trans-unit>
+			<trans-unit id="flux.googleMap.fields.mapHieght">
+				<source>Map Height (Integer default = 400)</source>
+			</trans-unit>
+			<trans-unit id="flux.googleMap.fields.defaultMapCenter">
+				<source>Default Map Center</source>
+			</trans-unit>
+			<trans-unit id="flux.googleMap.fields.setCenterToFirstItem">
+				<source>Set Center To First Item</source>
+			</trans-unit>
+			<trans-unit id="flux.googleMap.objects.column.latitudeLongitude">
+				<source>Latitude and Longitude</source>
+			</trans-unit>
+			<trans-unit id="flux.googleMap.objects.column.zoomlevel">
+				<source>Zoom Level When click on marker</source>
+			</trans-unit>
+			<trans-unit id="flux.googleMap.objects.column.contact">
+				<source>Contact</source>
 			</trans-unit>
 		</body>
 	</file>

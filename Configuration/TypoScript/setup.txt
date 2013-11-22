@@ -86,6 +86,3 @@ plugin.tx_bestbox.view {
 # Previous value was {page.uid} in file EXT:speciality/Resources/Private/Partials/Header.html
 #lib.pageUid = TEXT
 #lib.pageUid.data = page:uid
-
-
-plugin.tx_bestbox._CSS_DEFAULT_STYLE ()

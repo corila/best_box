@@ -36,6 +36,7 @@ $EM_CONF[$_EXTKEY] = array(
 			'typo3' => '6.0',
 			'fluidcontent' => '',
 			'fluidpages' => '',
+			'fluidcontent_bootstrap' => '',
 			'cms' => '',
 			'vhs' => '',
 		),

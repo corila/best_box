@@ -11,9 +11,9 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tstemplate.php']['i
 
 \TYPO3\CMS\BestBox\Hooks\TypoScriptTemplateBox::getInstance()->addStaticTemplates(array(
 		'EXT:css_styled_content/static',
-		'EXT:seo_basics/static',
-		'EXT:news/Configuration/TypoScript',
-		'EXT:form/Configuration/TypoScript',
+		//'EXT:seo_basics/static',
+		//'EXT:news/Configuration/TypoScript',
+		//'EXT:form/Configuration/TypoScript',
 		'EXT:fluidpages/Configuration/TypoScript',
 		'EXT:fluidcontent/Configuration/TypoScript',
 		'EXT:fluidcontent_bootstrap/Configuration/TypoScript',
